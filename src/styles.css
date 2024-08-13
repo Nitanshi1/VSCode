@@ -1,1 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  
+body.light-theme {
+    background-color: white;
+    color: black;
+  }
+ 
+  
+  body.dark-theme {
+    background-color: black;
+    color: white;
+  }
+  body.dark-theme p{
+    color:#9BA3B4;
+  }
+  body.dark-theme h1,h2{
+    color:white;
+  }  
+  body.dark-theme .feature-card {
+    color: #fff; 
+    background-color: #171717; 
+    border: 1px solid #555;
+  }
+  body.dark-theme .feature-card-title{
+    color: white;
+  }
+  body.dark-theme .feature-card img{
+    background-color: #272727;
+  }
+  body.dark-theme .card{
+    background-color: #171717;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  }
+  body.dark-theme .card h5{
+    color: white;
+  }
+  body.dark-theme .card p{
+    color: #9BA3B4;
+  }
+body.light-theme .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #FCFCFC;
+    border-color: rgb(246, 240, 240);
+    border-style:outset;
+}
+  body.dark-theme .card:hover{
+
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(163, 162, 162, 0.597);
+  border-color: #949191;
+  border-style:inset;
+  }
+  body.dark-theme .text-content h6{
+    color: #9BA3B4;
+  }
+  body.dark-theme .footer-container{
+    background-color: black;
+  }
+  body.dark-theme .footer-row ul.links li a
+  {
+    color: #9BA3B4;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+  transition: color 0.3s ease;
+
+  }
+  body.light-theme .footer-row ul.links li a{
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+  transition: color 0.3s ease;
+  }
+ body.dark-theme .secondary-tagline h6{
+    color: #9BA3B4;
+ }
+ body.dark-theme .secondary-tagline h2{
+    color: white;
+ }
+ .light-theme .image-section img {
+    content: url('/home.png'); 
+  }
+  
+  .dark-theme .image-section img {
+    content: url('/homedark.png'); 
+  }
+  .light-theme .image-section1 img {
+    content: url('/swimlane-copilot-light.png'); 
+  }
+  
+  .dark-theme .image-section1 img {
+    content: url('/swimlane-copilotdark.png'); 
+  }
+  .light-theme .image-section2 img {
+    content: url('/swimlane-customized-light.png'); 
+  }
+  
+  .dark-theme .image-section2 img {
+    content: url('/swimlane-customizeddark.png'); 
+  }
+  .light-theme .image-section3 img {
+    content: url('/swimlane-anywhere-light.png'); 
+  }
+  
+  .dark-theme .image-section3 img {
+    content: url('/swimlane-anywheredark.png'); 
+  }

@@ -1,0 +1,133 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 40px; 
+  background-color: #ffffff; 
+  margin-top: 400px;
+  margin: 70px;
+
+
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0; 
+}
+
+.footer-social ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.footer-social ul li {
+  margin-right: 0; 
+}
+
+.footer-social ul li a img {
+  width: 50px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  max-width: 28px;
+
+
+}
+
+.footer-social ul li a img:hover {
+  opacity: 1;
+
+}
+.linksmicrosoft{
+  margin-left: 1135px;
+
+}
+.microsoft-logo img {
+  width: 27px; 
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.microsoft-logo img:hover {
+  opacity: 1;
+  
+}
+
+.footer-row ul.links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .footer-row ul.links li a {
+  color: #090909;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  
+  transition: color 0.3s ease;
+} */
+
+
+
+#footer-microsoft-link {
+  margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .footer-row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-bottom: 15px;
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .linksmicrosoft {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links img {
+    width: 18px;
+  }
+
+  .microsoft-logo img {
+    height: 25px;
+  }
+}

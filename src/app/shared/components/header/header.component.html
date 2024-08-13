@@ -1,0 +1,55 @@
+
+<header class="header" [ngClass]="isDarkTheme?'dark':''">
+  <nav class="navbar">
+    <div class="navbar-brand" [ngClass]="isDarkTheme?'dark2':''">
+      <img src="/logo.png" alt="VS Code Logo" class="logo">
+      <span class="mycon">Visual Studio Code</span>
+    </div>
+    <ul class="navbar-nav" [ngClass]="isDarkTheme?'dark1':''" >
+      <li class="nav-item"><span>Docs</span></li>
+      <li class="nav-item"><span>Updates</span></li>
+      <li class="nav-item"><span>Blog</span></li>
+      <li class="nav-item"><span>API</span></li>
+      <li class="nav-item"><span>Extensions</span></li>
+      <li class="nav-item"><span>FAQ</span></li>
+      <li class="nav-item"><span>Learn</span></li>
+    </ul>
+    <div class="navbar-right">
+      <button (click)="toggleTheme()" class="theme-toggle-button">
+        <img [src]="themeIcon" alt="Theme Toggle Icon" />
+      </button>
+      <div class="search-container"  >
+        <fa-icon [icon]="faSearch"></fa-icon>
+        <input type="text" placeholder="Search Docs" [ngClass]="isDarkTheme?'dark':''">
+      </div>
+      <button type="primary" class="download-button styled-download-button">Download</button>
+    </div>
+  </nav>
+
+  <div class="updates-banner home" *ngIf="isBannerVisible"   >
+    <div class="container" >
+      <div class="message" >
+        <a href="/updates" id="banner-link-updates" >Version 1.92</a> 
+        <span [ngClass]="isDarkTheme?'dark1':''">is now available! Read about the new features and fixes from July.</span>
+        <span class="close"  (click)="closeBanner()" >&times;</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="content" [ngClass]="isDarkTheme?'dark':''">
+    <div class="text-section" [ngClass]="isDarkTheme?'dark3':''">
+      <span  [ngClass]="isDarkTheme?'dark4':'light'" class="subtitle">Free. Built on open source. Runs everywhere.</span>
+      <h1 class="mainline">Code Editing. Redefined.</h1>
+      <button type="primary" class="main-download-button">Download for Windows</button>
+      <p class="additional-links">
+        <a href="#"> Web </a>, <a href="#"> Insiders edition </a>, or <a href="#"> other platforms </a>
+      </p>
+      <p class="terms">
+        By using VS Code, you agree to its <a href="#">license</a> and <a href="#">privacy statement</a>.
+      </p>
+    </div>
+    <div class="image-section" [ngClass]="isDarkTheme?'dark':''">
+      <img src="/home.png" alt="VS Code Image">
+    </div>
+  </section>
+</header>
